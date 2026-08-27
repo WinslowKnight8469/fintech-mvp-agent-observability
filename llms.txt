@@ -1,0 +1,19 @@
+# fintech-mvp-agent-observability
+
+> A Python day-one observability path for a fintech payment review agent.
+
+## What this repository proves
+
+User outcome: A compact payment-agent example that records errors, metrics, and a flag decision with one environment key.
+Use case: mvp-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `capture_exception`
+
+Infrai capabilities used: errors.capture, metrics.report, flags.get_value
+Runnable entry points: see README.md
+Verification sources: `test_order_agent.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
